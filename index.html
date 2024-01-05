@@ -3,18 +3,138 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Gooding</title>
-    <style>
-        body {
-            background-color: #d5d8e1;
-        }
-    </style>
+    <title>Portfolio Website - Matthew Gooding</title>
+
+
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/globe-solid.png">
 </head>
 
 <body>
-    <h1>Matthew Gooding Portfolio</h1>
+    <header>
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-globe"></i>
+            <span>Matthew Gooding</span>
+        </a>
+        <div class="openMenu" aria-label="Open Navigation Menu"><i class="fa fa-bars"></i></div>
+        <nav id="nav">
+            <ul class="mainMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times" aria-label="Close Navigation Menu"></i></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Hey, I'm Matthew Gooding</br><strong>Front-end Developer</strong></h1>
+            <span class="inline">
+                <a class="button" href="#projects">
+                    Projects
+                    <i class="fa-solid fa-laptop"></i>
+                </a>
+                <a class="button" href="#contact">
+                    Contact
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </span>
+            <i class="fa-solid fa-arrow-down"></i>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="container">
+                <p>
+                    I'm a passionate web development student who enjoys transforming new ideas
+                    into fully functional digital experiences. I've tackled each challenge with
+                    exceptional dedication and eagerness.
+                </p>
+                <p>
+                    My web development journey has covered a diverse range of projects, including
+                    websites, web applications, graphic design, as well as UI and UX work. I approach
+                    each challenge with exceptional dedication and eagerness.
+                </p>
+                <p>
+                    I'm always eager to learn, grow, and enhance my skills. If you're interested in
+                    working with me, please feel free to <a class="button-2" href="#contact">contact me.</a>
+                </p>
+                <span>
+                    <a class="button-2" href="#">
+                        Resume
+                        <i class="fa-regular fa-file"></i>
+                    </a>
+                    <a class="button-2" href="https://www.linkedin.com/in/matthew-gooding/">
+                        LinkedIn
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="button-2" href="https://github.com/MattGooding">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </span>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="horizontal">
+                <li class="button">HTML</li>
+                <li class="button">CSS</li>
+                <li class="button">JAVASCRIPT</li>
+                <li class="button">WORDPRESS</li>
+                <li class="button">SQL</li>
+                <li class="button">GRAPHIC DESIGN</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="container horizontal">
+                <img src="images/ProjectImageTemplate.png">
+                <div>
+                    <h3>Project Title</h3>
+                    <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="button-2" href="#">
+                        View Live
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Lets transform your vision into a digital reality - Contact me!</h2>
+            <a class="button" href="#contact">
+                Contact
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </section>
+        <footer>
+            <span class="copyright">© 2023 All rights reserved.</span>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </main>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
