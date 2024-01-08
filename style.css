@@ -147,15 +147,6 @@ img {
     width: 400px;
 }
 
-#skills ul {
-    list-style: none;
-}
-
-#skills ul li {
-    padding: 8px 32px;
-    margin: 0 5px;
-}
-
 .container {
     width: 1000px;
     padding: 30px;
