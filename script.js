@@ -28,6 +28,6 @@ function scrollFunction() {
         document.getElementsByTagName('header')[0].style.padding = "15px 0px";
 
     } else {
-        document.getElementsByTagName('header')[0].style.padding = "30px 0px";
+        document.getElementsByTagName('header')[0].style.padding = "25px 0px";
     }
 }

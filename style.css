@@ -64,6 +64,7 @@ h1 strong {
 
 h2 {
     font-size: var(--textSize2);
+    margin-bottom: 80px;
 }
 
 h3 {
@@ -101,7 +102,7 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     font-size: var(--textSize4);
-    border: 1px solid #a1a1a1;
+    border: 1px solid var(--colorGrey);
     transition: .3s;
     color: #a1a1a1;
     background-color: #1a1a1a;
@@ -127,7 +128,7 @@ button {
 }
 
 .button-2 {
-    border-bottom: 1px solid #a1a1a1;
+    border-bottom: 1px solid var(--colorGrey);
     padding: 2px 0;
     transition: .3s;
 }
@@ -162,7 +163,7 @@ img {
     color: #a1a1a1;
     background-color: #1a1a1a;
     font-size: var(--textSize4);
-    border: 1px solid #a1a1a1;
+    border: 1px solid var(--colorGrey);
 }
 
 .vertical {
@@ -183,11 +184,16 @@ body {
     color: var(--colorLightGrey);
 }
 
+main {
+    background-attachment: fixed;
+    background-color: #161616;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232e2e2e' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 header {
     background-attachment: fixed;
     background-color: #161616;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232e2e2e' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E");
-
     position: fixed;
     width: 80%;
     z-index: 10;
@@ -199,7 +205,7 @@ header {
     font-weight: var(--weightMedium);
     font-size: var(--textSize4);
     margin: 0 10%;
-    padding: 30px 0px;
+    padding: 25px 0px;
 }
 
 footer {
@@ -215,11 +221,7 @@ footer {
     padding: 30px 0px;
 }
 
-main {
-    background-attachment: fixed;
-    background-color: #161616;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232e2e2e' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E");
-}
+
 
 header .mainMenu,
 footer .mainMenu {
@@ -291,9 +293,9 @@ section {
 }
 
 section:nth-child(n + 2) {
-    margin: 50px auto;
+    margin: 80px auto;
     border-top: 1px solid var(--colorGrey);
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 #home {
@@ -312,7 +314,7 @@ p {
     line-height: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     header .mainMenu {
         height: 100vh;
         position: fixed;
@@ -347,5 +349,15 @@ p {
     .icons i {
         display: inline-block;
         padding: 12px;
+    }
+
+    header,
+    footer,
+    section {
+        width: 98%;
+    }
+
+    header {
+        margin: 0 2%;
     }
 }
