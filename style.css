@@ -28,7 +28,7 @@ html {
     /*Text Sizing*/
     --textSize1: 2.8rem;
     --textSize2: 2.5rem;
-    --textSize3: 1.2rem;
+    --textSize3: 2rem;
     --textSize4: 1rem;
 
     /*Font Weight*/
@@ -39,7 +39,6 @@ html {
 }
 
 h2,
-h3,
 h4,
 h5 {
     font-weight: var(--weightBold);
@@ -56,6 +55,8 @@ footer {
 h1 {
     font-size: var(--textSize2);
     font-weight: var(--weightRegular);
+    line-height: 60px;
+    margin-bottom: 50px;
 }
 
 h1 strong {
@@ -65,10 +66,13 @@ h1 strong {
 h2 {
     font-size: var(--textSize2);
     margin-bottom: 80px;
+    line-height: 60px;
 }
 
 h3 {
-    font-size: var(--textSize2);
+    font-size: var(--textSize3);
+    font-weight: var(--weightBold);
+    margin-bottom: 25px;
 }
 
 p {
@@ -106,6 +110,7 @@ button {
     transition: .3s;
     color: #a1a1a1;
     background-color: #1a1a1a;
+    margin: 0 20px;
 }
 
 .button:hover {
@@ -129,8 +134,9 @@ button {
 
 .button-2 {
     border-bottom: 1px solid var(--colorGrey);
-    padding: 2px 0;
+    padding: 2px;
     transition: .3s;
+    margin-right: 15px;
 }
 
 .button-2:hover {
@@ -139,12 +145,17 @@ button {
 }
 
 i {
-    margin-left: 5px;
+    margin-left: 6px;
     font-size: 16px;
+}
+
+.fa-arrow-down {
+    margin-left: 12px;
 }
 
 img {
     width: 400px;
+    margin-right: 25px;
 }
 
 .container {
@@ -302,7 +313,7 @@ section:nth-child(n + 2) {
 
 p {
     margin-bottom: 15px;
-    line-height: 30px;
+    line-height: 35px;
 }
 
 @media (max-width: 800px) {
