@@ -12,7 +12,7 @@ font-family: 'Roboto', sans-serif;
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--colorDarkGrey);
+    background-color: #161616;
 }
 
 :root {
@@ -366,7 +366,7 @@ p {
     }
 
     header .mainMenu {
-        height: 40vh;
+        height: 50vh;
         position: fixed;
         top: 0px;
         right: 0px;
@@ -378,6 +378,7 @@ p {
         background: var(--colorDarkGrey);
         transition: top 1s ease 0s;
         display: none;
+        border-bottom: 1px solid var(--colorGrey);
     }
 
     header .mainMenu .closeMenu {
@@ -462,7 +463,7 @@ p {
         margin-bottom: 50px;
     }
 
-    footer .mainMenu li a {
+    .mainMenu li a {
         margin: 5px 0;
     }
 }
