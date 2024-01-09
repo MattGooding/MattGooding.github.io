@@ -449,6 +449,10 @@ p {
         width: 90%;
     }
 
+    h1 strong {
+        letter-spacing: 4px;
+    }
+
     h1,
     h2 {
         font-size: var(--textSize3);
