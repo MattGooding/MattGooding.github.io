@@ -429,6 +429,10 @@ p {
         flex-direction: column;
     }
 
+    .inline {
+        margin-top: 40px;
+    }
+
     img {
         width: 100%;
         margin: 15px;
