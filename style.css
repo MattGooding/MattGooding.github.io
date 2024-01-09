@@ -353,7 +353,7 @@ p {
 
 @media (max-width: 800px) {
 
-    nav {
+    header nav {
         position: absolute;
     }
 
