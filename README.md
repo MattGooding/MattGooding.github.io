@@ -9,5 +9,5 @@ My personal web developer portfolio built with HTML, CSS, and JavaScript
 
 
 
-![Screenshot](https://mattgooding.github.io/images/ScreenShot.png)
+![Screenshot](https://matthew-gooding-portfolio.vercel.app/assets/images/ScreenShot.png)
 
