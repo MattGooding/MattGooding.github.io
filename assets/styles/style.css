@@ -161,9 +161,15 @@ i {
 }
 
 img {
-    width: 400px;
-    height: 100%;
+    width: 500px;
+    height: 300px;
     margin-right: 25px;
+}
+
+.mobile {
+    width: 300px;
+    height: 300px;
+    margin: 0 136px;
 }
 
 .container {
@@ -212,7 +218,7 @@ img {
     transform: translateY(0);
 }
 
-#projects .container:nth-child(3) {
+.gap {
     margin: 80px 0;
 }
 
@@ -369,6 +375,10 @@ p {
     line-height: 35px;
 }
 
+.mobile {
+    height: 200px;
+}
+
 @media (max-width: 1300px) {
 
     h1 {
@@ -378,7 +388,15 @@ p {
     }
 
     img {
-        width: 350px;
+        width: 400px;
+        height: 250px;
+        margin-right: 25px;
+    }
+
+    .mobile {
+        width: 250px;
+        height: 250px;
+        margin: 0 72px;
     }
 
     header,
@@ -478,7 +496,14 @@ p {
 
     img {
         width: 100%;
-        margin: 15px;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .mobile {
+        width: 280px;
+        height: 100%;
+        margin: 10px;
     }
 
     #home .button {
