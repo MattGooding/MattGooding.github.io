@@ -222,6 +222,10 @@ img {
     margin: 80px 0;
 }
 
+.gap:last-child {
+    margin-bottom: 0;
+}
+
 
 .vertical {
     display: flex;
