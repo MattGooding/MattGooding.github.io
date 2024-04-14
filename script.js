@@ -20,7 +20,7 @@ function close() {
     mainMenu.style.top = '-100%';
 }
 
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// When the user scrolls down 30px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {

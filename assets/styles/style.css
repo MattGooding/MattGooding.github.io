@@ -18,8 +18,7 @@ html {
 :root {
     /*Colors*/
     --colorWhite: #e1e1e1;
-    --colorBlack: #a1a1a1;
-    --colorLightGrey: #a1a1a1;
+    --colorLightGrey: #dadada;
     --colorGrey: #6f6f6f;
     --colorDarkGrey: #1a1a1a;
 
@@ -83,6 +82,8 @@ h3 {
 
 p {
     font-size: var(--textSize4);
+    margin-bottom: 15px;
+    line-height: 1.5rem;
 }
 
 h1,
@@ -121,6 +122,7 @@ button {
 
 .button:hover {
     transform: translateY(-3px);
+    background-color: #161616;
 }
 
 .button:active {
@@ -131,11 +133,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.copyright {
-    font-weight: var(--weightRegular);
-    letter-spacing: 0;
 }
 
 .button-2 {
@@ -153,11 +150,6 @@ button {
 i {
     margin-left: 6px;
     font-size: 16px;
-}
-
-.fa-arrow-down {
-    margin-top: 150px;
-    margin-left: 12px;
 }
 
 img {
@@ -274,14 +266,14 @@ footer {
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid var(--colorGrey);
-    font-weight: var(--weightMedium);
+    font-weight: var(--weightLight);
     font-size: var(--textSize4);
+    color: var();
     margin: 0 10%;
     padding: 30px 0px;
 }
 
-header .mainMenu,
-footer .mainMenu {
+header .mainMenu {
     display: flex;
     list-style: none;
     align-items: center;
@@ -293,8 +285,7 @@ a {
     color: #a1a1a1;
 }
 
-header .mainMenu li a,
-footer .mainMenu li a {
+header .mainMenu li a {
     color: var(--colorLightGrey);
     display: inline-block;
     margin-left: 50px;
@@ -304,7 +295,6 @@ footer .mainMenu li a {
 
 
 header .mainMenu li a:hover,
-footer .mainMenu li a:hover,
 .logo:hover {
     color: var(--colorWhite);
 }
@@ -320,6 +310,12 @@ header .openMenu:hover {
     color: var(--colorWhite);
 }
 
+header .mainMenu li a:active,
+.logo:active,
+header .openMenu:active {
+    transform: scale(0.95);
+}
+
 header .mainMenu .closeMenu {
     display: none;
     cursor: pointer;
@@ -331,8 +327,7 @@ header .mainMenu .closeMenu i {
 }
 
 
-header .logo,
-footer .logo {
+header .logo {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -364,7 +359,7 @@ section:nth-child(n + 2) {
 }
 
 #home {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 
     display: flex;
@@ -372,11 +367,6 @@ section:nth-child(n + 2) {
     align-items: center;
     justify-content: start;
     text-align: center;
-}
-
-p {
-    margin-bottom: 15px;
-    line-height: 35px;
 }
 
 .mobile {
@@ -412,11 +402,6 @@ p {
     header,
     footer {
         margin: 0 6%;
-    }
-
-    .fa-arrow-down {
-        margin-top: 100px;
-        margin-left: 0;
     }
 
     .container {
@@ -473,11 +458,6 @@ p {
         padding: 12px;
     }
 
-    .fa-arrow-down {
-        margin-top: 50px;
-        margin-left: 0;
-    }
-
     header,
     footer,
     section {
@@ -511,14 +491,15 @@ p {
     }
 
     #home .button {
-        margin-top: 25px;
+        margin-top: 15px;
         padding: 15px 100px;
     }
 
     h1 {
-        margin-top: 150px;
+        margin-top: 120px;
         margin-bottom: 0;
-        width: 90%;
+        width: 95%;
+        line-height: 2.75rem;
     }
 
     h1 strong {
@@ -543,12 +524,10 @@ p {
         flex-direction: column-reverse;
     }
 
-    footer .mainMenu {
-        flex-direction: column;
-        margin-bottom: 50px;
+    .copyright {
+        margin: 20px 0;
     }
 
-    footer .mainMenu li a,
     header .mainMenu li a {
         margin: 5px 0;
         margin-left: 0px;
