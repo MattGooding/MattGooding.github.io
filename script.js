@@ -2,6 +2,7 @@ const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 const menu_items = document.querySelectorAll('nav .mainMenu li a');
+const upArrow = document.querySelector(".fa-angle-up");
 
 // close menu when you click on a menu item 
 openMenu.addEventListener('click', show);

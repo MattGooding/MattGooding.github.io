@@ -295,8 +295,10 @@ header .mainMenu li a {
 
 
 header .mainMenu li a:hover,
-.logo:hover {
+.logo:hover,
+header .openMenu:hover {
     color: var(--colorWhite);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 header .openMenu {
@@ -304,10 +306,6 @@ header .openMenu {
     display: none;
     cursor: pointer;
     transition: .2s;
-}
-
-header .openMenu:hover {
-    color: var(--colorWhite);
 }
 
 header .mainMenu li a:active,
